@@ -15,45 +15,34 @@ This project uses Laravel Sail for local development, which provides a complete 
 
 #### Installation
 
-1. Fork the repository and clone your fork:
-   ```bash
-   git clone <your-fork-url>
-   ```
+```bash
+# 1. Fork the repository and clone your fork
+git clone <your-fork-url>
 
-2. Install PHP dependencies:
-   ```bash
-   ./vendor/bin/sail composer install
-   ```
+# 2. Navigate to the project directory
+cd sourceable
 
-3. Copy the environment file:
-   ```bash
-   cp .env.example .env
-   ```
+# 3. Install PHP dependencies
+./vendor/bin/sail composer install
 
-4. Start the application with Sail:
-   ```bash
-   ./vendor/bin/sail up -d
-   ```
+# 4. Copy the environment file
+cp .env.example .env
 
-5. Generate application key:
-   ```bash
-   ./vendor/bin/sail artisan key:generate
-   ```
+# 5. Start the application with Sail
+./vendor/bin/sail up -d
 
-6. Run database migrations:
-   ```bash
-   ./vendor/bin/sail artisan migrate
-   ```
+# 6. Generate application key
+./vendor/bin/sail artisan key:generate
 
-7. Install frontend dependencies:
-   ```bash
-   ./vendor/bin/sail npm install
-   ```
+# 7. Run database migrations
+./vendor/bin/sail artisan migrate
 
-8. Start the NPM development server:
-   ```bash
-   ./vendor/bin/sail npm run dev
-   ```
+# 8. Install frontend dependencies
+./vendor/bin/sail npm install
+
+# 9. Start the NPM development server
+./vendor/bin/sail npm run dev
+```
 
 The application will be available at `http://localhost`.
 
