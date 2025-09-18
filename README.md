@@ -6,7 +6,7 @@ An open source click tracking platform built with Laravel and React.
 
 ### Local Development with Laravel Sail
 
-This project uses Laravel Sail for local development, which provides a complete Docker environment.
+This project uses [Laravel Sail](https://laravel.com/docs/sail) for local development, which provides a complete Docker environment.
 
 #### Prerequisites
 
@@ -48,11 +48,22 @@ The application will be available at `http://localhost`.
 
 #### Development Commands
 
-- Start all services: `./vendor/bin/sail up -d`
-- Stop all services: `./vendor/bin/sail down`
-- View logs: `./vendor/bin/sail logs`
-- Run tests: `./vendor/bin/sail artisan test`
-- Access the container: `./vendor/bin/sail shell`
+```bash
+# Start all services
+./vendor/bin/sail up -d
+
+# Stop all services
+./vendor/bin/sail down
+
+# View logs
+./vendor/bin/sail logs
+
+# Run tests
+./vendor/bin/sail artisan test
+
+# Access the container
+./vendor/bin/sail shell
+```
 
 For convenience, you can create a shell alias:
 ```bash
